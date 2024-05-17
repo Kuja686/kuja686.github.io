@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tines Geburtstagsrätsel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     
+    <div class="title">
+        <h1>Tines Geburtstagsrätsel</h1>
+    </div>  
+    <div class="hero">
+        <img src="img/tinekevin.jpg" alt="Tine und Kevin" width="666" height="500">
+        <div>
+            <p>Zu aller erst wünsche ich dir alles, alles Liebe zum Geburtstag! Danke für die wunderbare Zeit, die ich bisher mit dir verbringen durfte und Danke für die vielen weiteren gemeinsamen Geburtstage, die noch kommen werden!</p>
+            <p>Und jetzt möchte ich dich gerne auf einen kleinen Ausflug einladen. Dafür musst du allerdings erst etwas leisten. Du hast ab jetzt 6 Tage Zeit, die folgenden drei Rätsel zu lösen. Jede Lösung offenbart dir einen Teil des finalen Hinweis. Mit Hilfe dieses Hinweis wird dir schnell klar werden, wo uns unsere Reise am 25.06. hinführen wird.</p>
+            <p>Dir sind alle Hilfsmittel (Tools, Suchmaschinen, etc.) erlaubt. Natürlich darfst du auch nach Tipps fragen. Ich wünsche dir ganz viel   Erfolg!</p>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <a href="#video">Videorätsel</a>
+            <a href="#picture">Bilderrätsel</a>
+            <a href="#crossword">Kreuzworträtsel</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="video">
+            <h2>Videorätsel</h2>
+            <p>Für den ersten Teil des Hinweis musst du dieses Videorätsel lösen. Du kannst dir das Video sowohl im Browser anschauen, als auch über den Link darunter herunterladen.</p>
+            <div class="puzzle">
+                <video width="800" height="530" controls>
+                    <source src="video/video.mp4" type="video/mp4">
+                </video>
+                <a href="video/video.mp4" download>Download Video</a>
+            </div>
+            <div class="solution">
+                <label for="solution1">Lösung Videorätsel:</label>
+                <input type="text" id="solution1" name="solution1">
+            </div>
+        </section>
+        <section id="picture">
+            <h2>Bilderrätsel</h2>
+            <p>Ohne große Einführung geht es direkt mit dem Bilderrätsel weiter.</p>
+            <div class="puzzle">
+                <p><i><q>In Worten reich, in Versen klar, ein großer Mann, ein Poet er war. In seinen Stücken, verborgen und klar, Liegt Antwort und Rätsel, offenbar.</q></i></p>
+                <img src="img/europa.png" alt="Europakarte" width="900" height="514" usemap="#europa">
+                <map name="europa">
+                    <area shape="circle" coords="375,295,10" href="" onmousemove="getPos(event, 'play3')" onmouseover="make_visible('play3')" onmouseleave="make_invisible('play3')">
+                    <area shape="circle" coords="425,325,10" href="" onmousemove="getPos(event, 'play2')" onmouseover="make_visible('play2')" onmouseleave="make_invisible('play2')">
+                    <area shape="circle" coords="425,205,10" href="" onmousemove="getPos(event, 'play4')" onmouseover="make_visible('play4')" onmouseleave="make_invisible('play4')">
+                    <area shape="circle" coords="345,175,10" href="" onmousemove="getPos(event, 'play1')" onmouseover="make_visible('play1')" onmouseleave="make_invisible('play1')">
+                </map>
+                <img src="img/play1.png" alt="" id="play1" class="play play1 inv">
+                <img src="img/play2.png" alt="" id="play2" class="play play2 inv">
+                <img src="img/play3.png" alt="" id="play3" class="play play3 inv">
+                <img src="img/play4.png" alt="" id="play4" class="play play4 inv">
+                <p><i><q>In Akten groß, in Szenen klein, ein Monolog verborgen, nicht deutlich doch fein. Das dritte Wort, so klar, so rein, das Rätsel löst sich, ganz allein.</q></i></p>
+            </div>
+            <div class="solution">
+                <label for="solution2">Lösung Bilderrätsel:</label>
+                <input type="text" id="solution2" name="solution2">
+            </div>
+        </section>
+        <section id="crossword">
+            <h2>Kreuzworträtsel</h2>
+            <p>Löse dieses Kreuzworträtsel, um den letzten Teil des Hinweis freizuschalten.</p>
+            <div class="puzzle">
+                <ol>
+                    <li>Ort, an dem wir uns wieder getroffen haben.</li>
+                    <li>Veranstaltung, die uns schon vor unserer Beziehung ab und zu in die selbe Stadt getrieben hat.</li>
+                    <li>Stadt, in der ich mein Abitur gemacht habe.</li>
+                    <li>Ort unseres ersten gemeinsamen (Auslands-)Urlaubs.</li>
+                    <li>Veranstaltung, nach der wir (beinahe) beim knutschen erwischt wurden.</li>
+                    <li>Erstes gemeinsames Musical.</li>
+                    <li>Letztes Wort der ersten Produktion von der du mir erzählt hast.</li>
+                    <li>Veranstaltung, in deren Rahmen wir zum ersten Mal vor einer Gruppe als Paar aufgetreten sind.</li>
+                    <li>Meine Lieblingsband</li>
+                    <li>Anzahl der Monate, die zwischen unserem Wiedersehen und dem Start der Beziehung lagen.</li>
+                    <li>Ort, an dem wir uns zum ersten Mal trafen.</li>
+                </ol>
+                <div class="crossword-container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item mark" placeholder="1">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <div></div>
+                    <div></div>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item mark" placeholder="2">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item mark" placeholder="3">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <div></div>
+                    <div></div>
+
+                    <div></div>
+                    <div></div>
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item mark" placeholder="4">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item mark" placeholder="5">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item mark" placeholder="6">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item mark" placeholder="7">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <div></div>
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <div style="text-align: center;">-</div>
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item mark" placeholder="8">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <div></div>
+                    <div></div>
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <div></div>
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item mark" placeholder="9">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item mark" placeholder="10">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item mark" placeholder="11">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                    <input maxlength="1" type="text" name="" id="" class="crossword-item">
+                </div>
+            </div>
+            <div class="solution">
+                <label for="solution3">Lösung Kreuzworträtsel:</label>
+                <input type="text" id="solution3" name="solution3">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Finaler Hinweis:</p>
+        <div>
+            <span id="printSolution1"></span>
+            <span>.</span>
+            <span id="printSolution2"></span>
+            <span>-</span>
+            <span id="printSolution3"></span>
+        </div>
+        <button onclick="check()">Hinweis prüfen</button>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
