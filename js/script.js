@@ -22,9 +22,11 @@ function check(){
     part3 = document.getElementById('solution3').value
 
     if (part1.toLowerCase().trim() == '10' && part2.toLowerCase().trim() == 'welt' && part3.toLowerCase().trim() == 'ausstellung') {
-        alert('10. Weltausstellung')
+        window.scrollTo(0,0);
+        canvas = document.getElementById('fireworks')
+        canvas.classList.remove('inv')
     } else {
-        alert(':(')
+        alert('Das stimmt leider nicht :(')
     }
 }
 
