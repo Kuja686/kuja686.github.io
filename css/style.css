@@ -188,6 +188,7 @@ ol li {
     width: 100%;
     padding: 2rem;  
     background-color: #1e293b;
+    color: whitesmoke;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
