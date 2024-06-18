@@ -196,15 +196,3 @@ ol li {
 .solution label {
     padding-right: 2rem;
 }
-
-@media screen and (max-width: 600px) {
-    * {
-        visibility: hidden;
-        display: none;
-    }
-
-    #wrong-device {
-        display: block;
-    }
-
-}
