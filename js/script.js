@@ -51,3 +51,15 @@ function make_invisible(id){
     var element = document.getElementById(id);
     element.classList.add('inv');
 }
+
+const detectMobile = () => {
+    if(window.innerWidth <= 800 || window.innerHeight <= 600) {
+        return true;
+      } else {
+        return false;
+      }
+};
+
+if (detectMobile()) {
+    window.location = "/falsches-geraet.html";
+}
